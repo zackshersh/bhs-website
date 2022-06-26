@@ -20,3 +20,8 @@
 .Title > p {
     max-width: 480px;
 }
+
+.Nav-Container {
+    /* position: absolute; */
+    bottom: 24px;
+}
