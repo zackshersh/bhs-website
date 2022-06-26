@@ -8,7 +8,7 @@ function Block({children, title, background}) {
         ${background}-Block`
 
     return (
-        <div className={`Block ${title ? "Title-Block" : ""}`}>
+        <div className={classString}>
             <div className='Width-Container'>
                 {children}
             </div>

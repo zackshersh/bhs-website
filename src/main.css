@@ -1,4 +1,10 @@
 
+:root {
+    --dark: #2A3158;
+    --light: #FFF0DD;
+    --accent: #FFA779;
+}
+
 * {
     margin: 0px;
     margin-block-start: 0px;
@@ -15,8 +21,8 @@
 .Block > .Width-Container {
     max-width: 715px;
     width: 715px;
+    padding: 24px;
 }
-
 
 
 
@@ -25,5 +31,5 @@
 }
 
 .Dark-Block {
-    background-color: purple;
+    background-color: var(--dark);
 }
