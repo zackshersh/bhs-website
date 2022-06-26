@@ -12,6 +12,52 @@
 }
 
 
+/* FONTS */
+@font-face {
+    font-family: "Editorial New Bold";
+    src: url("./assets/fonts/PPEditorialNew-Bold.woff")
+    format("woff")
+}
+@font-face {
+    font-family: "Montreal";
+    src: url("./assets/fonts/PPNeueMontreal-Regular.woff")
+    format("woff")
+}
+@font-face {
+    font-family: "Montreal Medium";
+    src: url("./assets/fonts/PPNeueMontreal-Medium.woff")
+    format("woff")
+}
+@font-face {
+    font-family: "Montreal Bold";
+    src: url("./assets/fonts/PPNeueMontreal-Bold.woff")
+    format("woff")
+}
+
+
+
+
+
+/* BASIC STYLES */
+h1 {
+    font-family: "Editorial New Bold";
+    font-size: 48px;
+}
+
+h3 {
+    font-family: "Montreal Medium";
+    font-size: 24px;
+}
+
+p {
+    font-family: "Montreal";
+}
+
+
+
+
+
+/* BLOCK STYLES */
 .Block {
     width: 100vw;
     display: flex;
