@@ -1,0 +1,29 @@
+
+* {
+    margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+.Block {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Block > .Width-Container {
+    max-width: 715px;
+    width: 715px;
+}
+
+
+
+
+.Title-Block {
+    height: 100vh;
+}
+
+.Dark-Block {
+    background-color: purple;
+}
