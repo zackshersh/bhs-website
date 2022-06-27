@@ -1,4 +1,9 @@
 nav {
     position: sticky;
-    top: 10px;
+    top: 0px;
+    padding: 24px;
+    margin-top: -80px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }

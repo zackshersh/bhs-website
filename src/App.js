@@ -6,9 +6,12 @@ import "./main.css"
 function App() {
     return (
         <div className="App">
-            <Nav></Nav>
             <Block title={true} background={"Dark"}>
                 <Title />
+            </Block>
+            <Nav></Nav>
+            <Block background={"Light"}>
+                
             </Block>
             <div style={{padding: "24px", height: "200vh"}}></div>
         </div>

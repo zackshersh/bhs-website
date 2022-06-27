@@ -4,8 +4,10 @@ import "../nav.css"
 function Nav(props) {
     return (
         <nav>
-            <button>Staff</button>
             <button>Services</button>
+            <button>Staff</button>
+            <button>New Clients</button>
+            <button>Contact</button>
         </nav>
     );
 }
