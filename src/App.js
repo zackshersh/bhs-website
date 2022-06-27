@@ -2,6 +2,8 @@ import Block from "./components/Block";
 import Nav from "./components/Nav";
 import Title from "./components/Title";
 import "./main.css"
+import "./blocks.css"
+import Services from "./components/Services";
 
 function App() {
     return (
@@ -11,7 +13,7 @@ function App() {
             </Block>
             <Nav></Nav>
             <Block background={"Light"}>
-                
+                <Services />
             </Block>
             <div style={{padding: "24px", height: "200vh"}}></div>
         </div>

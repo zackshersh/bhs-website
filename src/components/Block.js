@@ -2,10 +2,7 @@ import React from 'react';
 
 function Block({children, title, background}) {
 
-    const classString = `
-        Block 
-        ${title ? "Title-Block" : ""} 
-        ${background}-Block`
+    const classString = `Block${title ? " Title-Block" : ""} ${background}-Block`
 
     return (
         <div className={classString}>

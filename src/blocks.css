@@ -1,0 +1,40 @@
+.Services {
+    padding: 48px 0px 32px 0px;
+}
+
+.Services > .Header {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Services > .Header > h2 {
+    margin-right: 48px;
+}
+
+.Services > .Header > p {
+    color: var(--dark);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+
+.Services-List {
+    font-family: "Montreal";
+    color: var(--dark);
+    font-size: 18px;
+    margin: 36px 0px;
+    border-left: 3px solid var(--accent);
+}
+
+.Services-List > li {
+    margin-top: 14px;
+}
+
+.Services-List > li > p {
+    font-size: 14px;
+    margin: 4px 0px 8px 8px;
+    font-family: "Montreal Light";
+    max-width: 75%;
+}
+

@@ -25,6 +25,11 @@
     format("woff")
 }
 @font-face {
+    font-family: "Montreal Light";
+    src: url("./assets/fonts/PPNeueMontreal-Light.woff")
+    format("woff")
+}
+@font-face {
     font-family: "Montreal Medium";
     src: url("./assets/fonts/PPNeueMontreal-Medium.woff")
     format("woff")
@@ -43,6 +48,13 @@
 h1 {
     font-family: "Editorial New Bold";
     font-size: 48px;
+}
+
+h2 {
+    font-family: "Editorial New Bold";
+    font-size: 32px;
+    color: var(--dark);
+    
 }
 
 h3 {
