@@ -38,3 +38,53 @@
     max-width: 75%;
 }
 
+
+
+.Staff {
+    padding-bottom: 48px;
+}
+
+.Staff > * {
+    color: var(--light);
+}
+
+.Staff > h2 {
+    padding: 48px 0px 32px 0px;
+}
+
+
+.Staff-Card-Cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Staff-Card {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.Staff-Card:hover {
+    width: 200px;
+}
+
+.Staff-Card > img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.Staff-Card > h5 {
+    font-family: "Montreal Medium";
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.Staff-Card > p {
+    font-size: 12px;
+}
