@@ -6,6 +6,7 @@ import "./blocks.css"
 import Services from "./components/Services";
 import Staff from "./components/Staff";
 import NewClient from "./components/NewClient";
+import Contact from "./components/Contact";
 
 function App() {
     return (
@@ -22,6 +23,9 @@ function App() {
             </Block>
             <Block background={"Light"}>
                 <NewClient />
+            </Block>
+            <Block pos_relative={true} background={"Dark"}>
+                <Contact />
             </Block>
         </div>
     );

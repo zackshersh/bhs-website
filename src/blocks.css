@@ -109,7 +109,7 @@
     text-underline-offset: 0.2em;
     text-decoration-thickness: 2px;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
 
 }
 
@@ -131,4 +131,64 @@
 
 .New-Client > section > p {
     color: var(--dark);
+}
+
+
+
+
+.Contact {
+    height: 400px;
+    display: flex;
+}
+
+.Contact > .Spacer {
+    min-width: 50%;
+}
+
+.Contact > .Image-Cont {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50vw;
+    height: 100%;
+    background-image: url("../src/assets/images/bhs-front.png");
+    background-size: cover;
+}
+
+.Contact > .Image-Cont > img {
+    height: 100%;
+    width: auto;
+}
+
+
+.Contact > .Content {
+    padding: 24px;
+}
+
+.Contact > .Content > div {
+    margin-top: 48px;
+}
+
+.Contact > .Content > div > p {
+    color: var(--light);
+    margin: 16px 0px 0px 0px;
+}
+
+.Contact > .Content > div > a {
+    font-size: 24px;
+    font-family: "Montreal Medium";
+    color: var(--light);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 2px;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.Contact > .Content > div > a:hover {
+    padding: 2px 2px;
+    background-color: var(--accent);
+    /* border-radius: 25px; */
+    text-decoration: none;
 }
