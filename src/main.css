@@ -2,6 +2,7 @@
 :root {
     --dark: #2A3158;
     --light: #FFF0DD;
+    --light-2: #FAE6CC;
     --accent: #FFA779;
 }
 
@@ -66,6 +67,9 @@ p {
     font-family: "Montreal";
 }
 
+a:link, a:visited {
+    color: var(--dark)
+}
 
 button {
     border: none;

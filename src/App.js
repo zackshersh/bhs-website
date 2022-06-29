@@ -5,6 +5,7 @@ import "./main.css"
 import "./blocks.css"
 import Services from "./components/Services";
 import Staff from "./components/Staff";
+import NewClient from "./components/NewClient";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
                 <Staff />
             </Block>
             <Block background={"Light"}>
-                
+                <NewClient />
             </Block>
         </div>
     );

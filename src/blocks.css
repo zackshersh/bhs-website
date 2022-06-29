@@ -88,3 +88,47 @@
 .Staff-Card > p {
     font-size: 12px;
 }
+
+
+.New-Client {
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.New-Client > h5 {
+    font-size: 18px;
+    font-family: "Montreal";
+    color: var(--dark);
+    margin-top: 28px;
+}
+
+.New-Client > h5 > a, .New-Client > section > p > a {
+    font-family: "Montreal Medium";
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 2px;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+.New-Client > h5 > a:hover, .New-Client > section > p:hover > a:hover {
+    padding: 2px 2px;
+    background-color: var(--accent);
+    /* border-radius: 25px; */
+    text-decoration: none;
+}
+
+.New-Client > section {
+    background-color: var(--light-2);
+    padding: 12px;
+    border-radius: 12px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.New-Client > section > p {
+    color: var(--dark);
+}
