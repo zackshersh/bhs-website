@@ -1,0 +1,10 @@
+
+.Form-Modal {
+    background-color: var(--dark);
+
+}
+
+.Form-Modal > form {
+    max-width: 715px;
+    width: 715px;
+}

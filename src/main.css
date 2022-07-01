@@ -81,6 +81,7 @@ button {
     font-family: "Montreal";
     cursor: pointer;
     outline: 1px solid var(--accent);
+
 }
 
 button:hover {

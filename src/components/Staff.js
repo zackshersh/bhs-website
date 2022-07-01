@@ -2,7 +2,6 @@ import React from 'react';
 
 import staff from "../staff.json"
 import StaffCard from './StaffCard';
-console.log(staff)
 
 const staffCards = staff.map((provider,i) => <StaffCard key={i} provider={provider} />)
 
