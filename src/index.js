@@ -8,16 +8,14 @@ import {
     Route,
 } from "react-router-dom";
 import FormPage from './components/FormPage';
+import Home from './components/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />}>
-                <Route path="/potential-client-form" element={<FormPage />}>
-
-                </Route>
-            </Route>
+            <Route path="/" element={<App />}></Route>
+            <Route path="/potential-client-form" element={<FormPage />}></Route>
         </Routes>
     </BrowserRouter>
 );

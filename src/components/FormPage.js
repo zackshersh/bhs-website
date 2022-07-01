@@ -5,8 +5,9 @@ import "../form.css"
 function FormPage({display}) {
 
     return (
-        <div className='Form-Modal'>
+        <div className='Form-Page'>
             <form>
+                <h1>Form Page</h1>
 
             </form>
         </div>

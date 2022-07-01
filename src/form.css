@@ -1,10 +1,12 @@
 
-.Form-Modal {
+.Form-Page {
     background-color: var(--dark);
+    justify-content: center;
+    display: flex;
 
 }
 
-.Form-Modal > form {
+.Form-Page > form {
     max-width: 715px;
     width: 715px;
 }
