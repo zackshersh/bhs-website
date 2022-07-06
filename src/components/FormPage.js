@@ -6,6 +6,7 @@ import InputCont from './InputCont';
 import PaymentTypeSelect from './PaymentTypeSelect';
 import ____Spacer_____ from './Spacer';
 import TextInput from './TextInput';
+import TreatmentTypeSelect from './TreatmentTypeSelect';
 
 function FormPage({display}) {
 
@@ -48,9 +49,9 @@ function FormPage({display}) {
                         </InputCont>
                     </div>
                 )
-            case "credit card":
+            default:
                 return (
-                    <h1>credit card</h1>
+                    <span></span>
                 )
         }
     }
@@ -84,6 +85,19 @@ function FormPage({display}) {
                         {generatePayOptions()}
                     </FormGroup>
 
+                    <____Spacer_____ height={2} />
+
+                    <FormGroup title={"Treatment"}>
+                        <InputCont>
+                            <TreatmentTypeSelect state={service} setter={setService} />
+                        </InputCont>
+                        <InputCont>
+                            <TextInput title={"Please enter the reason you are seeking care."} state={reason} setter={setReason} required={true} textArea={true} />
+                        </InputCont>
+                    </FormGroup>
+                    <div style={{display: "flex", justifyContent: "center"}}>
+                        <button className='Form-Submit'>Submit</button>
+                    </div>
                 </main>
 
             </form>

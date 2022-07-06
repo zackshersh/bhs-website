@@ -2,7 +2,8 @@
 .Form-Page {
     background-color: var(--dark);
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    padding-top: 72px;
     display: flex;
     min-height: 100vh;
 
@@ -45,7 +46,7 @@
     margin: 8px 20px 8px 0;
 }
 
-.Text-Input > input {
+.Text-Input > input, .Text-Input > textarea {
     margin-top: 4px;
     background-color: var(--light);
     color: var(--dark);
@@ -53,6 +54,11 @@
     border-radius: 50px;
     border: none;
     width: 100%;
+}
+
+.Text-Input > textarea {
+    border-radius: 12px;
+    font-family: "Montreal";
 }
 
 .Text-Input > p {
@@ -72,23 +78,31 @@
 }
 
 
-.Payment-Type {
+.Payment-Type, .Treatment-Type {
     display: flex;
-    margin: 12px;
+    margin: 12px 12px 12px 4px;
 }
 
-.Payment-Type > div {
+.Payment-Type > div, .Treatment-Type > div {
     margin: 4px 16px 4px 0px;
     display: flex;
     align-items: center;
 }
 
-.Payment-Type > div > label {
+.Payment-Type > div > label, .Treatment-Type > div > label {
     margin-left: 8px;
     font-family: "Montreal";
+    font-size: 14px;
 }
 
-.Payment-Type > div > input {
+
+
+
+.Form-Submit {
+    margin-top: 24px;
+    font-size: 18px;
+    padding: 20px 32px;
+    width: 200px;
 
 }
 

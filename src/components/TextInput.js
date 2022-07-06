@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TextInput({title, state, setter, required, small, type}) {
+function TextInput({title, state, setter, required, small, type, textArea}) {
 
     const handler = (e) => {
         setter(e.target.value);
@@ -13,7 +13,11 @@ function TextInput({title, state, setter, required, small, type}) {
     return (
         <div style={style} className='Text-Input'>
             <p>{title}{required ? <span> *</span>:""}</p>
-            <input type={type ? type : null} value={state} onChange={handler}></input>
+            {textArea ? 
+                <textarea type={type ? type : null} value={state} onChange={handler}></textarea> :
+                <input type={type ? type : null} value={state} onChange={handler}></input>
+
+            }
         </div>
     );
 }
