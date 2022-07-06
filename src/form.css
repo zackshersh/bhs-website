@@ -20,8 +20,18 @@
 }
 
 .Form-Group {
-    padding: 12px;
-    
+    padding: 24px;
+    background-color: var(--dark-2);
+    border-radius: 15px;
+}
+
+.Form-Group > h5 {
+    font-family: "Montreal Medium";
+    font-size: 18px;
+    margin: 8px 2px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--accent);
 }
 
 .Input-Cont {
@@ -32,14 +42,14 @@
 
 .Text-Input {
     width: 100%;
-    margin: 16px 20px 0 0;
+    margin: 8px 20px 8px 0;
 }
 
 .Text-Input > input {
     margin-top: 4px;
     background-color: var(--light);
     color: var(--dark);
-    padding: 4px 12px;
+    padding: 6px 12px;
     border-radius: 50px;
     border: none;
     width: 100%;
@@ -60,4 +70,27 @@
 .Spacer {
     min-width: 100%;
 }
+
+
+.Payment-Type {
+    display: flex;
+    margin: 12px;
+}
+
+.Payment-Type > div {
+    margin: 4px 16px 4px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.Payment-Type > div > label {
+    margin-left: 8px;
+    font-family: "Montreal";
+}
+
+.Payment-Type > div > input {
+
+}
+
+
 

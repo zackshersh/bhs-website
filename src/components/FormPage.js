@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import "../form.css"
 import FormGroup from './FormGroup';
 import InputCont from './InputCont';
+import PaymentTypeSelect from './PaymentTypeSelect';
 import ____Spacer_____ from './Spacer';
 import TextInput from './TextInput';
 
@@ -28,6 +29,33 @@ function FormPage({display}) {
     const [reason, setReason] = useState("");
 
 
+
+    function generatePayOptions(){
+        switch(paymentType){
+            case "insurance":
+                return (
+                    <div>
+                        <InputCont>
+                            <TextInput title={"Carrier"} state={carrier} setter={setCarrier} required={true}/>
+                        </InputCont>
+                        <InputCont>
+                            <TextInput title={"Member Number"} state={memberNumber} setter={setMemberNumber} />
+                            <TextInput title={"Group Number"} state={groupNumber} setter={setGroupNumber} />
+                        </InputCont>
+                        <InputCont>
+                            <TextInput title={"Primary Insured"} state={primaryInsured} setter={setPrimaryInsured} />
+                            <TextInput title={"Date of Birth"} state={piDOB} setter={setPiDOB} />
+                        </InputCont>
+                    </div>
+                )
+            case "credit card":
+                return (
+                    <h1>credit card</h1>
+                )
+        }
+    }
+
+
     return (
         <div className='Form-Page'>
             <form>
@@ -35,31 +63,26 @@ function FormPage({display}) {
                     <h3>Potential Clients</h3>
                 </header>
                 <main>
-                    <FormGroup>
+                    <FormGroup title={"Basic Info"}>
                         <InputCont>
                             <TextInput title={"First Name"} state={firstName} setter={setFirstName} required={true}/>
                             <TextInput title={"Middle Name"} state={middleName} setter={setMiddleName} required={false} small={true}/>
                             <TextInput title={"Last Name"} state={lastName} setter={setLastName} required={true}/>
                         </InputCont>
                         <InputCont>
-                            <TextInput title={"E-Mail"} state={email} setter={setEmail} required={true}/>
+                            <TextInput type={"email"} title={"E-Mail"} state={email} setter={setEmail} required={true}/>
                             <TextInput title={"Phone"} state={phone} setter={setPhone} required={true}/>
                         </InputCont>
                     </FormGroup>
 
                     <____Spacer_____ height={2} />
-                    
-                    <InputCont>
-                        <TextInput title={"Carrier"} state={carrier} setter={setCarrier} required={true}/>
-                    </InputCont>
-                    <InputCont>
-                        <TextInput title={"Member Number"} state={memberNumber} setter={setMemberNumber} required={true}/>
-                        <TextInput title={"Group Number"} state={groupNumber} setter={setGroupNumber} required={true}/>
-                    </InputCont>
-                    <InputCont>
-                        <TextInput title={"Primary Insured"} state={primaryInsured} setter={setPrimaryInsured} required={true}/>
-                        <TextInput title={"Date of Birth"} state={piDOB} setter={setPiDOB} required={true}/>
-                    </InputCont>
+
+                    <FormGroup title={"Payment"}> 
+                        <InputCont>
+                            <PaymentTypeSelect state={paymentType} setter={setPaymentType} />
+                        </InputCont> 
+                        {generatePayOptions()}
+                    </FormGroup>
 
                 </main>
 

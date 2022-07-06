@@ -1,8 +1,9 @@
 import React from 'react';
 
-function FormGroup({children}) {
+function FormGroup({children, title}) {
     return (
         <div className='Form-Group'>
+            { title ? <h5>{title}</h5> : null}
             {children}
         </div>
     );
