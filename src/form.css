@@ -2,11 +2,62 @@
 .Form-Page {
     background-color: var(--dark);
     justify-content: center;
+    align-items: center;
     display: flex;
+    min-height: 100vh;
 
 }
 
 .Form-Page > form {
     max-width: 715px;
     width: 715px;
+    color: var(--light);
 }
+
+.Form-Page > form > main {
+    padding: 24px 0px;
+
+}
+
+.Form-Group {
+    padding: 12px;
+    
+}
+
+.Input-Cont {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.Text-Input {
+    width: 100%;
+    margin: 16px 20px 0 0;
+}
+
+.Text-Input > input {
+    margin-top: 4px;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 4px 12px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+}
+
+.Text-Input > p {
+    font-size: 12px;
+    margin-left: 6px;
+    color: var(--light);
+    opacity: 70%;
+}
+
+.Text-Input > p > span {
+    color: var(--accent)
+}
+
+
+.Spacer {
+    min-width: 100%;
+}
+
