@@ -8,58 +8,52 @@ function Services(props) {
                 <h2>Services</h2>
                 <p>We offer psychotherapy to address a wide range of emotional, behavioral, and interpersonal issues.</p>
             </div>
-            {/* <section>
-                <ol className='Services-List'>
-                    <li>Anxiety Disorders
-                        <p>Including posttraumatic stress disorder, generalized anxiety disorder, and obsessive-compulsive disorder</p>
-                    </li>
-                    <li>Attention-Deficit Hyperactivity Disorder</li>
-                    <li>Mood Disorders
-                        <p>Including major depressive disorder and bipolar disorder</p>
-                    </li>
-                    <li>Sexual Behavior Problems
-                        <p>Including sexual offending, compulsive or addictive sexual behavior, and unwanted sexual interests </p>
-                    </li>
-                    <li>Relationship Issues</li>
-                    <li>Grief and Loss</li>
-                    <li>Life Transitions</li>
-                </ol>
-            </section> */}
             <section>
-
-                {/* <table>
-                    <tbody>
-                        <th>
-                            <td>Disorder</td>
-                            <td>Evaluation Offered</td>
-                            <td>Treatment Offered</td>
-                        </th>
-                    </tbody>
-                </table> */}
                 <table className='Services-Table'>
                     <thead>
                         <tr>
-                            <td>Disorder</td>
+                            <td className='C-1'>Disorder</td>
                             <td>Evaluation Offered</td>
                             <td>Treatment Offered</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Attention Deficit</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
+                            <td>Anxiety Disorders<i>Including posttraumatic stress disorder, generalized anxiety disorder, and obsessive-compulsive disorder</i></td>
+                            <td>✔</td>
+                            <td>✔</td>
                         </tr>
                         <tr>
-                            <td>Attention Deficit</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
+                            <td>Attention-Deficit Hyperactivity Disorder</td>
+                            <td>✔</td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>Attention Deficit</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
+                            <td>Mood Disorders <i>Including major depressive disorder and bipolar disorder</i></td>
+                            <td>✔</td>
+                            <td>✔</td>
                         </tr>
+                        <tr>
+                            <td>Sexual Behavior Problems <i>Including sexual offending, compulsive or addictive sexual behavior, and unwanted sexual interests </i></td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Relationship Issues</td>
+                            <td></td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Grief and Loss</td>
+                            <td></td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Life Transitions</td>
+                            <td></td>
+                            <td>✔</td>
+                        </tr>
+
                     </tbody>
                 </table>
 

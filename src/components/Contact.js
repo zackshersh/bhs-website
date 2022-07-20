@@ -4,6 +4,7 @@ import image from "../assets/images/bhs-front.png"
 function Contact(props) {
     return (
         <div className='Contact'>
+            <span className='Scroll-Target Contact-Scroll'></span>
             <div className='Image-Cont'></div>
             <div className='Spacer'></div>
             <div className='Content'>

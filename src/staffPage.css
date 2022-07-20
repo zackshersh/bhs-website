@@ -1,7 +1,7 @@
 .Staff-Page-Cont {
     width: 100%;
     min-height: 100vh;
-    padding: 48px 0px;
+    padding: 36px 0px;
     background-color: var(--light);
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@
 }
 
 .Staff-Page > main {
-    padding: 48px 12px 12px 12px;
+    padding: 28px 12px 12px 12px;
 }
 
 .Staff-Page > main > div > p {
@@ -69,14 +69,25 @@
     margin-right: 36px;
 }
 
+@media screen and (max-width: 600px) {
+    .Staff-Page > footer {
+        flex-direction: column;
+    }
+
+    .Staff-Page > footer > * {
+        margin: 12px;
+        width: 80%;
+    }
+}
+
 .Staff-Page > .Staff-Page-Exit {
     transition-property: none;
-    margin: 0px 0px 24px 12px;
+    margin: 0px 0px 12px 12px;
     display: block;
 }
 
 .Staff-Page > .Staff-Page-Exit > a {
-    font-size: 32px;
+    font-size: 28px;
     text-decoration: none;
     border-radius: 12px;
     /* transition-property: none; */
@@ -87,3 +98,4 @@
     padding: 0px; */
     margin: -12px;
 }
+

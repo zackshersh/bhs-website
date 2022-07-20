@@ -46,6 +46,10 @@
     /* background-color: var(--light-3); */
 }
 
+thead > tr > * {
+    padding: 20px 12px;
+}
+
 td {
     padding: 8px;
 }
@@ -58,21 +62,35 @@ thead > tr > td {
     /* background-color: var(--light-2); */
     color: var(--light);
 }
-
 thead > tr > td:nth-child(1){
     color: var(--light);
     background-color: var(--dark);
-    width: 250px;
+    width: 350px;
+    text-align: start;
+}
+
+tbody > tr > td:nth-child(1){
+    text-align: start;
 }
 
 tbody > tr > td {
-
     background-color: var(--light-2);
+    padding: 14px 12px;
+    /* width: 100%; */
+    text-align: center;
 }
 
-tbody > tr:nth-child(2) {
-    background-color: var(--light);
+tbody > tr > td > i {
+    margin-left: 1em;
+    font-size: 12px;
+    display: block;
+    margin-top: 0.2em;
 }
+
+tbody > tr:nth-child(odd) > * {
+    background-color: var(--light-2b);
+}
+
 
 .Staff {
     padding-bottom: 48px;
@@ -96,6 +114,7 @@ tbody > tr:nth-child(2) {
 .Staff-Card-Cont > a {
     text-decoration: none;
 }
+
 .Staff-Card-Cont > a:hover {
     background: none;
 }
@@ -174,6 +193,16 @@ tbody > tr:nth-child(2) {
 
 .New-Client > section > p {
     color: var(--dark);
+}
+
+@media screen and (max-width: 600px) {
+    .New-Client > section {
+        flex-direction: column;
+    }
+
+    .New-Client > section > * {
+        margin: 12px;
+    }
 }
 
 
