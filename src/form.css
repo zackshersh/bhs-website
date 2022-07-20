@@ -56,9 +56,14 @@
     width: 100%;
 }
 
+.Text-Input > input::placeholder, .Text-Input > textarea::placeholder {
+    color: red;
+}
+
 .Text-Input > textarea {
     border-radius: 12px;
     font-family: "Montreal";
+    height: 80px;
 }
 
 .Text-Input > p {
@@ -87,6 +92,7 @@
     margin: 4px 16px 4px 0px;
     display: flex;
     align-items: center;
+
 }
 
 .Payment-Type > div > label, .Treatment-Type > div > label {
@@ -95,6 +101,9 @@
     font-size: 14px;
 }
 
+.Payment-Type > div > .valid-marker {
+    
+}
 
 
 

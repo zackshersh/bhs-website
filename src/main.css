@@ -91,6 +91,23 @@ button:hover {
     color: var(--accent);
 }
 
+a {
+    font-family: "Montreal Medium";
+    /* color: var(--light); */
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 2px;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+a:hover {
+    padding: 0.1em 0.2em;
+    background-color: var(--accent);
+    text-decoration: none;
+}
+
 
 /* BLOCK STYLES */
 .Block {
@@ -117,4 +134,10 @@ button:hover {
 
 .Light-Block {
     background-color: var(--light);
+}
+
+
+.Scroll-Target {
+    display: block;
+    transform: translateY(-100px);
 }

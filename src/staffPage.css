@@ -1,0 +1,89 @@
+.Staff-Page-Cont {
+    width: 100%;
+    min-height: 100vh;
+    padding: 48px 0px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+}
+
+.Staff-Page-Cont > .Staff-Page {
+    width: 715px;
+    margin: 24px;
+}
+
+.Staff-Page > .Header {
+    display: flex;
+}
+
+.Staff-Page > .Header > * {
+    margin: 12px;
+}
+
+.Staff-Page > .Header > img {
+    border-radius: 15px;
+}
+
+.Staff-Page > .Header > div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 12px;
+    margin-left: 36px;
+    border-bottom: 2px solid var(--accent);
+    width: 100%;
+
+}
+
+.Staff-Page > .Header > div > h2 {
+    font-family: "Montreal Bold";
+    line-height: 100%;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.Staff-Page > main {
+    padding: 48px 12px 12px 12px;
+}
+
+.Staff-Page > main > div > p {
+    margin-top: 16px;
+    text-indent: 2em;
+}
+
+
+.Staff-Page > footer {
+    background-color: var(--light-2);
+    padding: 12px;
+    margin: 40px 12px 0px 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    color: var(--dark);
+}
+
+.Staff-Page > footer > button {
+    padding: 12px 36px;
+    margin-right: 36px;
+}
+
+.Staff-Page > .Staff-Page-Exit {
+    transition-property: none;
+    margin: 0px 0px 24px 12px;
+    display: block;
+}
+
+.Staff-Page > .Staff-Page-Exit > a {
+    font-size: 32px;
+    text-decoration: none;
+    border-radius: 12px;
+    /* transition-property: none; */
+}
+
+.Staff-Page > .Staff-Page-Exit > a:hover {
+    /* background: none;
+    padding: 0px; */
+    margin: -12px;
+}
