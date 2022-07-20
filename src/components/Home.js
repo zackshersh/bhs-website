@@ -12,6 +12,7 @@ import Contact from './Contact';
 function Home(props) {
     return (
         <div className='Home'>
+            <span className='Scroll-Target Home-Scroll'></span>
             <Block title={true} background={"Dark"}>
                 <Title />
             </Block>

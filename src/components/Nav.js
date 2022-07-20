@@ -15,6 +15,7 @@ function Nav(props) {
     return (
         <nav>
             <div>
+                <button onMouseDown={handleButton}>Home</button>
                 <button onMouseDown={handleButton}>Services</button>
                 <button onMouseDown={handleButton}>Staff</button>
                 <button onMouseDown={handleButton}>New Clients</button>

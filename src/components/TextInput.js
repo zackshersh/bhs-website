@@ -10,7 +10,7 @@ function TextInput({title, state, setter, required, small, type, textArea, valid
 
 
     function checkValidity(){
-        console.log(validating)
+
         if(state == "" && required && validating){
             console.log(`${title} is unfilled`)
             setValid(false);

@@ -12,14 +12,14 @@ import { submitFormData } from '../formSubmit';
 
 function FormPage({display}) {
 
-    const [firstName, setFirstName] = useState("");
-    const [middleName, setMiddleName] = useState("");
-    const [lastName, setLastName] = useState("");
+    const [firstName, setFirstName] = useState("Zack");
+    const [middleName, setMiddleName] = useState("S");
+    const [lastName, setLastName] = useState("Hersh");
 
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
+    const [email, setEmail] = useState("hobofrog1@gmail.com");
+    const [phone, setPhone] = useState("919-360-1962");
 
-    const [paymentType, setPaymentType] = useState("");
+    const [paymentType, setPaymentType] = useState("cash");
 
     const [carrier, setCarrier] = useState("");
     const [memberNumber, setMemberNumber] = useState("");
@@ -28,8 +28,8 @@ function FormPage({display}) {
     const [piDOB, setPiDOB] = useState("");
 
 
-    const [service, setService] = useState("");
-    const [reason, setReason] = useState("");
+    const [service, setService] = useState("evaluation");
+    const [reason, setReason] = useState("Make me a cool cat!");
 
     const [validating, setValidating] = useState(false);
 
@@ -83,7 +83,8 @@ function FormPage({display}) {
 
         };
 
-        submitFormData(data);
+        let res = await submitFormData(data);
+        console.log(res)
     }
 
 

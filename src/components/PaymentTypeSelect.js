@@ -9,7 +9,6 @@ function PaymentTypeSelect({state, setter, validating}) {
     }
 
     function checkValidity(){
-        console.log("Validating payment type")
         if(state == "" && validating){
             setValid(false);
         } else {

@@ -46,7 +46,9 @@
 
 
 
-
+body {
+    overscroll-behavior-y: none;
+}
 
 /* BASIC STYLES */
 h1 {

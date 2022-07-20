@@ -9,7 +9,6 @@ function TreatmentTypeSelect({state, setter, validating}) {
     const [valid, setValid] = useState(true);
     
     function checkValidity(){
-        console.log("Validating payment type")
         if(state == "" && validating){
             setValid(false);
         } else {
