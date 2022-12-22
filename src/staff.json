@@ -1,6 +1,7 @@
 [
     {
         "name": "Keith Hersh",
+        "fname": "keith",
         "title": "PhD",
         "image": "/images/keith-pic_2_orig.jpg",
         "email": "khersh@bhspa.net",
@@ -9,12 +10,14 @@
     },
     {
         "name": "Jane Hollings",
+        "fname": "jane",
         "title": "NCC, LPC, CSOTP",
         "image": "/images/jane-pic_new.jpg",
         "bio": ["Jane is fully licensed as a Licensed Professional Clinician (LPC) and Certified Sex Offender Provider (CSOTP) in both Virginia and North Carolina with dual masters in Forensic Psychology and Community Counseling from Marymount University in Arlington, VA. She is a member of the International Association of Trauma Professionals, American Professional Society on the Abuse of Children, and the American Society of Clinical Hypnosis. She works with clients from age ten through adulthood.  She has expertise in the areas of trauma, PTSD, grief/loss, attention-deficit/hyperactivity disorder, dissociative personality disorder, autism spectrum disorder, attachment, mood disorders and LGTBQ issues. She is trained to provide treatment in multiple therapeutic modalities, including cognitive-behavioral therapy (CBT), eye movement desensitization and reprocessing (EMDR), and hypnosis.","Jane also works with children and adolescents, ages 11 to 18, who have sexual behavioral issues. She interacts with probation, schools, and the court system providing evaluation and treatment. She treats victims, conducts family reunification, and provides ongoing assistance for the youth to safely maintain or reenter into the community."]
     },
     {
         "name": "Lauri Warren",
+        "fname": "lauri",
         "title": "LCSW",
         "image": "/images/lauri-pic_new.png",
         "bio": ["Sometimes life can feel overwhelming, and making changes can feel impossible. Relationships, trauma, health issues, life transitions, grief, complicated family dynamics, and childhood wounds can keep us feeling stuck.  They rob us of our joy and even dim the vision we have for our lives.","Research shows nothing is more important to the therapeutic experience than the relationship between child and therapist.  Whatever your reasons are for considering therapy, feeling comfortable with your therapist is very important.  My goal is to not only offer you a comfortable space to speak freely about your thoughts and experiences, but also to provide you with tools and strategies to incorporate into your daily routine.  Together we can unearth long-standing behavior patterns or negative perceptions that may be holding you back from experiencing a more fulfilling and meaningful life.","Your time with me is important.  I will listen to you, ask questions to gain further understanding, and offer insight and ideas in an objective, thoughtful, and supportive way via a caring, emphathic, and nonjudgmental environment where you can explore your current life challenges as well as address past issues that concern you.","With each client, I seek to create an individualized balance of applied clinical theory, creative interventions, compassion, and empathy to challenge negative thoughts, improve coping skills, enhance self-awareness, manage emotions, and develop healthier behaviors.  I also have experience in treating adults and youth with concerning sexual behaviors."],
@@ -22,6 +25,7 @@
     },
     {
         "name": "LaShonda Tyler",
+        "fname": "lashonda",
         "title": "",
         "image": "/images/lashonda_1_orig.jpg",
         "bio": ["LaShonda is our receptionist and administrative assistant.  She is available to schedule appointments, answer questions about billing, and provide other valuable help."],

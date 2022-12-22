@@ -5,6 +5,7 @@ import "../staffPage.css"
 import staffData from "../staff.json"
 
 import {Link, useParams} from 'react-router-dom';
+import { staffPhotos } from '../assets/staffPhotos';
 
 function StaffPage() {
 
@@ -22,7 +23,7 @@ function StaffPage() {
         let data = staffData[staffID];
         setName(data.name);
         setTitle(data.title);
-        setImage(data.image);
+        setImage(staffPhotos[data.fname]);
         setBio(data.bio);
         setEmail(data.email);
         setTherapist(data.therapist);
