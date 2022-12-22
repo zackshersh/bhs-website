@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/bhs-website/static/css/main.eecded9a.css",
-    "main.js": "/bhs-website/static/js/main.669b2577.js",
+    "main.js": "/bhs-website/static/js/main.b2ba54de.js",
     "static/media/bhs-front.png": "/bhs-website/static/media/bhs-front.5e32a8da037ea1297f3f.png",
+    "static/media/jane-pic_new.jpg": "/bhs-website/static/media/jane-pic_new.8afdd3c71bcfaf1814b5.jpg",
+    "static/media/lauri-pic_new.png": "/bhs-website/static/media/lauri-pic_new.2fe30b9267fc2fdd28d1.png",
     "static/media/PPEditorialNew-Bold.woff": "/bhs-website/static/media/PPEditorialNew-Bold.f6c550c496a8d7e9a697.woff",
     "static/media/PPNeueMontreal-Bold.woff": "/bhs-website/static/media/PPNeueMontreal-Bold.b44b93a780ecd8dbafec.woff",
     "static/media/PPNeueMontreal-Medium.woff": "/bhs-website/static/media/PPNeueMontreal-Medium.07070ee11dc38bfbd060.woff",
     "static/media/PPNeueMontreal-Light.woff": "/bhs-website/static/media/PPNeueMontreal-Light.5cec6ad2b94ca837efc3.woff",
     "static/media/PPNeueMontreal-Regular.woff": "/bhs-website/static/media/PPNeueMontreal-Regular.2842e150d6666a9f53bb.woff",
+    "static/media/lashonda_1_orig.jpg": "/bhs-website/static/media/lashonda_1_orig.bced82c6e1c90655a49c.jpg",
     "index.html": "/bhs-website/index.html",
     "main.eecded9a.css.map": "/bhs-website/static/css/main.eecded9a.css.map",
-    "main.669b2577.js.map": "/bhs-website/static/js/main.669b2577.js.map"
+    "main.b2ba54de.js.map": "/bhs-website/static/js/main.b2ba54de.js.map"
   },
   "entrypoints": [
     "static/css/main.eecded9a.css",
-    "static/js/main.669b2577.js"
+    "static/js/main.b2ba54de.js"
   ]
 }
