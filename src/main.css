@@ -94,7 +94,8 @@ button {
     color: var(--dark);
     font-family: "Montreal";
     cursor: pointer;
-    outline: 1px solid var(--accent);
+    /* outline: 1px solid var(--accent); */
+    border: 1px solid var(--accent);
 
 }
 
