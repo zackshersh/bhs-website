@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function PaymentTypeSelect({state, setter, validating}) {
+function PaymentTypeSelect({state, setter, validating, setOtherPayment}) {
 
     const [valid, setValid] = useState(true);
 
@@ -49,6 +49,15 @@ function PaymentTypeSelect({state, setter, validating}) {
                 <label style={valid?{}:labelStyles}>Insurance</label>
             </div>
             <div>
+                <input val={"self pay"} onChange={handleCheckbox} checked={state == "self pay"} type="checkbox"></input>
+                <label style={valid?{}:labelStyles}>Self Pay</label>
+            </div>
+            <div>
+                <input val={"other"} onChange={handleCheckbox} checked={state == "other"} type="checkbox"></input>
+                <label style={valid?{}:labelStyles}>Other</label>
+                <input onChange={(e) => {setOtherPayment(e.target.value)}} className='other-pay-field' style={{display: state == "other" ? "block" : "none"}} placeholder='Please Specify'></input>
+            </div>
+            {/* <div>
                 <input  val={"credit card"} onChange={handleCheckbox} checked={state == "credit card"} type="checkbox"></input>
                 <label style={valid?{}:labelStyles}>Credit Card</label>
             </div>
@@ -59,7 +68,7 @@ function PaymentTypeSelect({state, setter, validating}) {
             <div>
                 <input  val={"check"} onChange={handleCheckbox} checked={state == "check"} type="checkbox"></input>
                 <label style={valid?{}:labelStyles}>Check</label>
-            </div>
+            </div> */}
             <div className='valid-marker'>
                 {valid ? "" : <p style={validMarkerStyles}>Please Choose an Option</p>}
             </div>

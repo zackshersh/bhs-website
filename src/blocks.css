@@ -17,18 +17,42 @@
     margin-bottom: 5px;
 }
 
+.Services > main {
+    margin: 42px 0px 48px 24px;
+}
 
+.Services > main > h4 {
+    margin: 20px 0px 12px 0px;
+    color: var(--dark);
+    font-family: "Montreal Medium";
+    font-size: 18px;
+    /* text-decoration: underline; */
+    text-decoration-color: var(--accent);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
 
 .Services-List {
     font-family: "Montreal";
     color: var(--dark);
-    font-size: 18px;
-    margin: 36px 0px;
-    border-left: 3px solid var(--accent);
+    font-size: 16px;
+    margin: 12px 0px;
+    border-left: 1px solid var(--accent);
 }
 
 .Services-List > li {
-    margin-top: 14px;
+    margin-top: 8px;
+    line-height: 100%;
+
+}
+
+.Services-List > li > i {
+    font-size: 12px;
+    font-style: normal;
+    margin: 2px 12px;
+    display: block;
+    color: var(--dark-2);
+    opacity: 0.9;
 }
 
 .Services-List > li > p {
@@ -36,6 +60,36 @@
     margin: 4px 0px 8px 8px;
     font-family: "Montreal Light";
     max-width: 75%;
+}
+
+.Services > hr {
+    margin: 4px;
+}
+
+.Services > aside {
+    /* display: flex; */
+    /* margin-top: 24px; */
+    padding: 8px
+}
+.Services > aside > p {
+    color: var(--dark);
+    margin-top: 8px;
+    /* width: 50%; */
+    /* padding: 12px; */
+}
+
+.Services > aside > h4 {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Services > aside {
+        display: block;
+    }
+
+    .Services > aside > p {
+        width: 100%;
+    }
 }
 
 .Services-Table {
@@ -104,6 +158,11 @@ tbody > tr:nth-child(odd) > * {
     padding: 48px 0px 32px 0px;
 }
 
+.Staff > h3 {
+    color: var(--accent-2)
+}
+
+
 
 .Staff-Card-Cont {
     display: flex;
@@ -123,8 +182,8 @@ tbody > tr:nth-child(odd) > * {
     width: 180px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 12px;
+    justify-content: center;
+    margin: 12px auto;
     transition-property: all;
     transition-duration: 0.5s;
     color: var(--light);
@@ -152,15 +211,29 @@ tbody > tr:nth-child(odd) > * {
 }
 
 
+.Former-Clinician > * {
+    color: var(--light);
+}
+
+.Former-Clinician > p {
+    margin-top: 4px;
+    font-style: italic;
+}
+
+
 .New-Client {
     padding-top: 48px;
-    padding-bottom: 24px;
+    padding-bottom: 48px;
+}
+
+.New-Client > * {
+    color: var(--light);
 }
 
 .New-Client > h5 {
     font-size: 18px;
     font-family: "Montreal";
-    color: var(--dark);
+    color: var(--light);
     margin-top: 28px;
 }
 
@@ -172,6 +245,7 @@ tbody > tr:nth-child(odd) > * {
     text-decoration-thickness: 2px;
     transition-property: all;
     transition-duration: 0.25s;
+    color: var(--light);
 
 }
 
@@ -187,12 +261,24 @@ tbody > tr:nth-child(odd) > * {
     padding: 12px;
     border-radius: 12px;
     margin: 20px 0px;
+}
+
+.New-Client > section > div {
     display: flex;
     align-items: center;
+
+}
+
+.more-forms {
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    padding: 18px 0px 8px 0px;
+
 }
 
 .New-Client > section > p {
-    color: var(--dark);
+    color: var(--light);
 }
 
 @media screen and (max-width: 600px) {
@@ -209,8 +295,12 @@ tbody > tr:nth-child(odd) > * {
 
 
 .Contact {
-    height: 400px;
+    min-height: 400px;
     display: flex;
+}
+
+.Contact > .Content > div > * {
+    color: var(--dark);
 }
 
 .Contact > .Spacer {
@@ -242,14 +332,15 @@ tbody > tr:nth-child(odd) > * {
 }
 
 .Contact > .Content > div > p {
-    color: var(--light);
-    margin: 16px 0px 0px 0px;
+    /* color: var(--light); */
+    margin: 8px 0px 0px 0px;
 }
 
 .Contact > .Content > div > a {
     font-size: 24px;
+    line-height: 140%;
     font-family: "Montreal Medium";
-    color: var(--light);
+    /* color: var(--light); */
     text-decoration: underline;
     text-decoration-color: var(--accent);
     text-underline-offset: 0.2em;
@@ -263,4 +354,46 @@ tbody > tr:nth-child(odd) > * {
     background-color: var(--accent);
     /* border-radius: 25px; */
     text-decoration: none;
+}
+
+.Contact > .Content > div > p > a {
+    /* color: var(--light) */
+}
+
+
+
+
+
+
+
+.Fees-Insurance > h2 {
+    padding: 48px 0 32px 0;
+}
+
+.Fees-Insurance > div {
+    color: var(--dark);
+}
+
+.Fees-Insurance > div:nth-of-type(1){
+    margin-bottom: 48px;
+
+}
+.Fees-Insurance > div:nth-of-type(2){
+    margin-bottom: 64px;
+
+}
+
+.Fees-Insurance > div > h4 {
+    font-family: "Montreal Medium";
+    font-size: 20px;
+    margin: 8px 2px;
+    color: var(--dark);
+}
+
+.Fees-Insurance > div > p {
+    margin-top: 20px;
+}
+.Fees-Insurance > div > ul {
+    font-family: "Montreal";
+    margin: 36px 0;
 }

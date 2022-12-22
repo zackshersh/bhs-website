@@ -12,4 +12,12 @@ nav > div {
     padding: 12px;
     background-color: var(--dark);
     border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav > div > * {
+    /* flex-grow: 1; */
+    margin: 4px;
 }

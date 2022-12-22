@@ -30,6 +30,7 @@
     font-family: "Montreal Medium";
     font-size: 18px;
     margin: 8px 2px;
+    color: var(--accent-2);
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-color: var(--accent);
@@ -46,7 +47,7 @@
     margin: 8px 20px 8px 0;
 }
 
-.Text-Input > input, .Text-Input > textarea {
+.Text-Input > input, .Text-Input > textarea, .other-pay-field {
     margin-top: 4px;
     background-color: var(--light);
     color: var(--dark);
@@ -101,6 +102,10 @@
     font-size: 14px;
 }
 
+.Payment-Type > div > .other-pay-field {
+    margin-left: 12px;
+}
+
 .Payment-Type > div > .valid-marker {
     
 }
@@ -108,12 +113,18 @@
 
 
 .Form-Submit {
-    margin-top: 24px;
+    /* margin-top: 24px; */
     font-size: 18px;
     padding: 20px 32px;
     width: 200px;
 
 }
 
+.Submit-Message {
+    padding: 20px 32px;
+}
 
-
+.Error-Message {
+    background-color: rgb(138, 49, 49);
+    border-radius: 12px;
+}

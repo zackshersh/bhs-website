@@ -1,0 +1,23 @@
+.Fees-Page {
+    align-items: flex-start;
+}
+
+.Fees-Page > main > .Form-Group > h5 {
+    /* text-decoration: underline;
+    text-decoration-color: var(--accent); */
+}
+
+.Fees-Page > main > .Form-Group > p {
+    margin-top: 20px;
+}
+
+.Fees-Page > main > .Form-Group > ul {
+    font-family: "Montreal";
+    margin: 36px 0;
+}
+
+.Fees-Page > main > .Form-Group > ul > li > b {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+

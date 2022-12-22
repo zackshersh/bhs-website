@@ -1,0 +1,35 @@
+.More-Forms-Page {
+    height: 100%;
+    align-items: center;
+}
+
+
+.More-Forms-Page > main {
+    max-width: 715px;
+    width: 715px;
+    color: var(--light);
+}
+
+.More-Forms-Page > main > header > h3 {
+    color: var(--accent-2);
+}
+
+
+
+.More-Forms-Page > main > .group {
+    padding: 24px;
+    background-color: var(--dark-2);
+    border-radius: 15px;
+}
+
+.More-Forms-Page > main > .Form-Group {
+    margin: 24px 0px;
+}
+
+.More-Forms-Page > main > .Form-Group > h5 {
+    text-decoration: none;
+}
+
+.More-Forms-Page > main > .Form-Group > ul > li {
+    margin: 8px 0px;
+}

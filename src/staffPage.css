@@ -24,6 +24,8 @@
 
 .Staff-Page > .Header > img {
     border-radius: 15px;
+    max-width: 50%;
+    width: 50%;
 }
 
 .Staff-Page > .Header > div {

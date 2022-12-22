@@ -12,14 +12,16 @@ import { submitFormData } from '../formSubmit';
 
 function FormPage({display}) {
 
-    const [firstName, setFirstName] = useState("Zack");
-    const [middleName, setMiddleName] = useState("S");
-    const [lastName, setLastName] = useState("Hersh");
+    const [firstName, setFirstName] = useState("");
+    const [middleName, setMiddleName] = useState("");
+    const [lastName, setLastName] = useState("");
 
-    const [email, setEmail] = useState("hobofrog1@gmail.com");
-    const [phone, setPhone] = useState("919-360-1962");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
 
-    const [paymentType, setPaymentType] = useState("cash");
+    const [paymentType, setPaymentType] = useState("");
+
+    const [otherPayment, setOtherPayment] = useState("");
 
     const [carrier, setCarrier] = useState("");
     const [memberNumber, setMemberNumber] = useState("");
@@ -28,11 +30,14 @@ function FormPage({display}) {
     const [piDOB, setPiDOB] = useState("");
 
 
-    const [service, setService] = useState("evaluation");
-    const [reason, setReason] = useState("Make me a cool cat!");
+    const [service, setService] = useState("");
+    const [reason, setReason] = useState("");
 
     const [validating, setValidating] = useState(false);
 
+    const [submitState, setSubmitState] = useState("idle");
+        // STATES:
+            // "idle", "waiting", "success", "error"
 
     function validateSubmit(){
         setValidating(true);
@@ -71,6 +76,7 @@ function FormPage({display}) {
             email: email,
             phone: phone,
             paymentType: paymentType,
+            otherPayment: otherPayment,
             insuranceInfo: paymentType == "insurance" ? {
                 carrier: carrier,
                 memberNumber: memberNumber,
@@ -84,6 +90,12 @@ function FormPage({display}) {
         };
 
         let res = await submitFormData(data);
+        if(res.status == 200){
+            setSubmitState("success")
+        }
+        if(res.status >= 400){
+            setSubmitState("error")
+        }
         console.log(res)
     }
 
@@ -113,6 +125,21 @@ function FormPage({display}) {
         }
     }
 
+    function generateSubmitArea(){
+        switch(submitState){
+            case "idle":
+                return <button className='Form-Submit'>Submit</button>;
+            case "waiting":
+                return <span></span>;
+            case "success":
+                return <p className='Submit-Message Success-Message'>Your information has been successfully submitted, our office will be in contact.</p>;
+            case "error":
+                return <p className='Submit-Message Error-Message'>An error occured. Please try again later or call our office at <a>919-419-0524</a></p>
+                
+        }
+
+    }
+
 
     return (
         <div className='Form-Page'>
@@ -121,7 +148,7 @@ function FormPage({display}) {
                     <h3>Potential Clients</h3>
                 </header>
                 <main>
-                    <FormGroup title={"Basic Info"}>
+                    <FormGroup title={"Contact Information"}>
                         <InputCont>
                             <TextInput title={"First Name"} state={firstName} setter={setFirstName} required={true}  validating={validating}/>
                             <TextInput title={"Middle Name"} state={middleName} setter={setMiddleName} required={false} small={true}  validating={validating}/>
@@ -137,14 +164,14 @@ function FormPage({display}) {
 
                     <FormGroup title={"Payment"}> 
                         <InputCont>
-                            <PaymentTypeSelect state={paymentType} setter={setPaymentType} validating={validating} />
+                            <PaymentTypeSelect state={paymentType} setter={setPaymentType} validating={validating} setOtherPayment={setOtherPayment}/>
                         </InputCont> 
                         {generatePayOptions()}
                     </FormGroup>
 
                     <____Spacer_____ height={2} />
 
-                    <FormGroup title={"Treatment"}>
+                    <FormGroup title={"What type of services are you seeking?"}>
                         <InputCont>
                             <TreatmentTypeSelect state={service} setter={setService} validating={validating}/>
                         </InputCont>
@@ -152,8 +179,8 @@ function FormPage({display}) {
                             <TextInput title={"Please enter the reason you are seeking care."} state={reason} setter={setReason} required={true} textArea={true}  validating={validating}/>
                         </InputCont>
                     </FormGroup>
-                    <div style={{display: "flex", justifyContent: "center"}}>
-                        <button className='Form-Submit'>Submit</button>
+                    <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", margin: "24px 0px 48px 0px"}}>
+                        {generateSubmitArea()}
                     </div>
                 </main>
 

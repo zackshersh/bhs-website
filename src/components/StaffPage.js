@@ -15,6 +15,7 @@ function StaffPage() {
     const [image, setImage] = useState("");
     const [bio, setBio] = useState("");
     const [email, setEmail] = useState("");
+    const [therapist, setTherapist] = useState(false);
 
     
     function setData(){
@@ -24,7 +25,8 @@ function StaffPage() {
         setImage(data.image);
         setBio(data.bio);
         setEmail(data.email);
-        console.log(bio)
+        setTherapist(data.therapist);
+        console.log(therapist)
     }
 
     function generateBio(){
@@ -58,11 +60,12 @@ function StaffPage() {
                 <main>
                     {generateBio()}
                 </main>
-
-                <footer>
-                    <button>Contact {name.split(" ")[0]}</button>
-                    <p>To schedule an appointment with {name.split(" ")[0]} you may call our office at <a href="tel:919-419-0524">919-419-0524</a> or fill out <Link to={"/potential-client-form"}>this form</Link></p>
-                </footer>
+                {therapist ? 
+                    <footer>
+                        <button>Contact {name.split(" ")[0]}</button>
+                        <p>To schedule an appointment with {name.split(" ")[0]} you may call our office at <a href="tel:919-419-0524">919-419-0524</a> or fill out <Link to={"/potential-client-form"}>this form</Link></p>
+                    </footer> : ""
+                }
             </div>
         </div>
     );

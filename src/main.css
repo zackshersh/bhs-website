@@ -7,6 +7,9 @@
     --light-2b: #ecd6b9; 
     --light-3: #c5ae8f;
     --accent: #FFA779;
+    --accent-2: #ffcd9d;
+
+    --screen-s: 600px;
 }
 
 * {
@@ -68,6 +71,12 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-family: "Montreal Medium";
+    color: var(--dark);
+    font-size: 20px;
+}
+
 p {
     font-family: "Montreal";
 }
@@ -120,15 +129,15 @@ a:hover {
 }
 
 .Block > .Width-Container {
-    max-width: 715px;
-    width: 715px;
+    max-width: 850px;
+    width: 850px;
     padding: 24px;
 }
 
 
 
 .Title-Block {
-    height: 100vh;
+    height: 80vh;
 }
 
 .Dark-Block {

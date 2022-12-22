@@ -8,6 +8,7 @@ import Services from './Services';
 import Staff from './Staff';
 import NewClient from './NewClient';
 import Contact from './Contact';
+import FeesInsurance from './FeesInsurance';
 
 function Home(props) {
     return (
@@ -24,9 +25,12 @@ function Home(props) {
                 <Staff />
             </Block>
             <Block background={"Light"}>
+                <FeesInsurance />
+            </Block>
+            <Block background={"Dark"}>
                 <NewClient />
             </Block>
-            <Block pos_relative={true} background={"Dark"}>
+            <Block pos_relative={true} background={"Light"}>
                 <Contact />
             </Block>
         </div>
