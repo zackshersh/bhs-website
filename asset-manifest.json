@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/bhs-website/static/css/main.91473a6c.css",
+    "main.js": "/bhs-website/static/js/main.357006b6.js",
+    "static/media/bhs-front.png": "/bhs-website/static/media/bhs-front.5e32a8da037ea1297f3f.png",
+    "static/media/PPEditorialNew-Bold.woff": "/bhs-website/static/media/PPEditorialNew-Bold.f6c550c496a8d7e9a697.woff",
+    "static/media/PPNeueMontreal-Bold.woff": "/bhs-website/static/media/PPNeueMontreal-Bold.b44b93a780ecd8dbafec.woff",
+    "static/media/PPNeueMontreal-Medium.woff": "/bhs-website/static/media/PPNeueMontreal-Medium.07070ee11dc38bfbd060.woff",
+    "static/media/PPNeueMontreal-Light.woff": "/bhs-website/static/media/PPNeueMontreal-Light.5cec6ad2b94ca837efc3.woff",
+    "static/media/PPNeueMontreal-Regular.woff": "/bhs-website/static/media/PPNeueMontreal-Regular.2842e150d6666a9f53bb.woff",
+    "index.html": "/bhs-website/index.html",
+    "main.91473a6c.css.map": "/bhs-website/static/css/main.91473a6c.css.map",
+    "main.357006b6.js.map": "/bhs-website/static/js/main.357006b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91473a6c.css",
+    "static/js/main.357006b6.js"
+  ]
+}
