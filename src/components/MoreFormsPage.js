@@ -12,17 +12,16 @@ function MoreFormsPage(props) {
                 <div className='Form-Group'>
                     <h5>Intake Forms</h5>
                     <ul>
-                        <li><a>Psychotherapy intake packet</a></li>
-                        <li><a>Psychosexual evaluation packet</a></li>
-                        <li><a>Psychological evaluation packet</a></li>
-                        <li><a>Sexual behavior treatment program intake</a></li>
+                        <li><a href='./forms/BHS Intake Packet for Therapy Clients.docx'>Psychotherapy intake packet</a></li>
+                        <li><a href='./forms/BHS Intake Packet for Psychosexual Evaluation Clients.docx'>Psychosexual evaluation intake packet</a></li>
+                        <li><a href="./forms/BHS Intake Packet for Psychological Evaluation Clients.docx">Psychological evaluation intake  packet</a></li>
                     </ul>
                 </div>
                 <div className='Form-Group'>
                     <h5>Other Forms</h5>
                     <ul>
-                        <li><a>Release of information form</a></li>
-                        <li><a>Referral form</a></li>
+                        <li><a href="./forms/BHS Authorization to Release Information.docx">Release of information form</a></li>
+                        <li><a href="./forms/BHS Referral Form.docx">Referral form</a></li>
                     </ul>
                 </div>
             </main>

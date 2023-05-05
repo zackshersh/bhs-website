@@ -32,4 +32,10 @@
 
 .More-Forms-Page > main > .Form-Group > ul > li {
     margin: 8px 0px;
+    color: var(--light);
+}
+
+.More-Forms-Page a {
+    color: var(--light);
+
 }
